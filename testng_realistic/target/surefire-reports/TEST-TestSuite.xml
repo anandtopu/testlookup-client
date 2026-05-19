@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="677.491" tests="5" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\test-classes;C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\classes;C:\Users\anand\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\anand\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\anand\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\anand\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\anand\.m2\repository\io\testlookup\testlookup-reporter\1.0.0\testlookup-reporter-1.0.0.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.1\jackson-dataformat-yaml-2.17.1.jar;C:\Users\anand\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\anand\AppData\Local\Temp\surefire15179564570466491330\surefirebooter-20260518225243881_3.jar C:\Users\anand\AppData\Local\Temp\surefire15179564570466491330 2026-05-18T22-52-43_771-jvmRun1 surefire-20260518225243881_1tmp surefire_0-20260518225243881_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\test-classes;C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\classes;C:\Users\anand\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\anand\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\anand\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\anand\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\anand\.m2\repository\io\testlookup\testlookup-reporter\1.0.0\testlookup-reporter-1.0.0.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.1\jackson-dataformat-yaml-2.17.1.jar;C:\Users\anand\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\anand"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\anand\AppData\Local\Temp\surefire15179564570466491330\surefirebooter-20260518225243881_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="anand"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\anand\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\anand\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\anand\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\nodejs\;C:\Program Files\PowerShell\7\;C:\Program Files\Go\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.14\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\anand\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python312\;C:\Users\anand\.cargo\bin;C:\Users\anand\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python311\;C:\Users\anand\.local\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2025.1.1.1\bin;;C:\Users\anand\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.2.1\bin;C:\Program Files\nodejs;C:\Users\anand\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Lens\resources\cli\bin;C:\Program Files\JetBrains\PyCharm 2025.3.3\bin;C:\Users\anand\AppData\Local\Python\bin;C:\Users\anand\AppData\Local\Microsoft\WindowsApps;C:\Users\anand\AppData\Roaming\npm;C:\Users\anand\go\bin;C:\Users\anand\AppData\Roaming\Python\Python314\Scripts;C:\Program Files\JetBrains\GoLand 2026.1\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="runMultipleSuitesInParallelWithOneApiKey" classname="com.example.ParallelSuitesWithOneApiKeyTest" time="230.596">
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+May 18, 2026 10:52:44 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 4379d7bc-9d40-4d70-84b2-1795213b589e run=4379d7bc-9d40-4d70-84b2-1795213b589e
+May 18, 2026 10:52:44 PM io.testlookup.testng.TestLookupListener onStart
+INFO: TestLookupListener: session started: 4379d7bc-9d40-4d70-84b2-1795213b589e
+May 18, 2026 10:52:45 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 5c9a7a19-713a-4351-8713-2df60a73e413 run=5c9a7a19-713a-4351-8713-2df60a73e413
+May 18, 2026 10:52:45 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: ea89572b-d92b-4fcb-bb5a-2a956b01212c run=ea89572b-d92b-4fcb-bb5a-2a956b01212c
+May 18, 2026 10:52:45 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: edf021fb-82ff-46cc-8f34-0e57dac409fc run=edf021fb-82ff-46cc-8f34-0e57dac409fc
+May 18, 2026 10:52:45 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 567d304b-90a5-4a0e-8fd6-55e47dbd19ac run=567d304b-90a5-4a0e-8fd6-55e47dbd19ac
+May 18, 2026 10:55:48 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: ea89572b-d92b-4fcb-bb5a-2a956b01212c
+May 18, 2026 10:55:48 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: ea89572b-d92b-4fcb-bb5a-2a956b01212c sent=10 failed=0
+May 18, 2026 10:56:10 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: edf021fb-82ff-46cc-8f34-0e57dac409fc
+May 18, 2026 10:56:10 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: edf021fb-82ff-46cc-8f34-0e57dac409fc sent=10 failed=0
+May 18, 2026 10:56:22 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 567d304b-90a5-4a0e-8fd6-55e47dbd19ac
+May 18, 2026 10:56:22 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 567d304b-90a5-4a0e-8fd6-55e47dbd19ac sent=9 failed=0
+May 18, 2026 10:56:35 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 5c9a7a19-713a-4351-8713-2df60a73e413
+May 18, 2026 10:56:35 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 5c9a7a19-713a-4351-8713-2df60a73e413 sent=10 failed=0
+]]></system-err>
+  </testcase>
+  <testcase name="submitOneSuiteWithHundredCasesAndStepDetails" classname="com.example.SingleSuiteHundredCasesTest" time="231.793">
+    <system-err><![CDATA[May 18, 2026 10:56:35 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 20997332-e51c-4330-afb4-fd20f9ec08c6 run=20997332-e51c-4330-afb4-fd20f9ec08c6
+May 18, 2026 11:00:27 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 20997332-e51c-4330-afb4-fd20f9ec08c6
+May 18, 2026 11:00:27 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 20997332-e51c-4330-afb4-fd20f9ec08c6 sent=100 failed=0
+]]></system-err>
+  </testcase>
+  <testcase name="run100CasesWith10Failures" classname="com.example.Volume100With10FailuresTest" time="25.844">
+    <system-out><![CDATA[
+============================================================
+  Volume100With10FailuresTest — starting simulation
+------------------------------------------------------------
+  build_id           volume-100-10f-af8115dc
+  total_cases        100
+  planned passed     90
+  planned failed     10
+  planned skipped    0
+============================================================
+  [Volume100With10FailuresTest] progress 25/100  passed=23  failed=2  skipped=0
+  [Volume100With10FailuresTest] progress 50/100  passed=45  failed=5  skipped=0
+  [Volume100With10FailuresTest] progress 75/100  passed=68  failed=7  skipped=0
+  [Volume100With10FailuresTest] progress 100/100  passed=90  failed=10  skipped=0
+
+============================================================
+  Volume100With10FailuresTest — simulation summary
+------------------------------------------------------------
+  build_id           volume-100-10f-af8115dc
+  session_id         98779d60-4247-4c51-b8c9-93469966fc81
+  run_id             98779d60-4247-4c51-b8c9-93469966fc81
+------------------------------------------------------------
+  total_cases        100
+    PASSED           90
+    FAILED           10
+    SKIPPED          0
+------------------------------------------------------------
+  events_sent        100
+  events_failed      0
+  wall_clock         25.823s
+============================================================
+]]></system-out>
+    <system-err><![CDATA[May 18, 2026 11:00:27 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 98779d60-4247-4c51-b8c9-93469966fc81 run=98779d60-4247-4c51-b8c9-93469966fc81
+May 18, 2026 11:00:53 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 98779d60-4247-4c51-b8c9-93469966fc81
+May 18, 2026 11:00:53 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 98779d60-4247-4c51-b8c9-93469966fc81 sent=100 failed=0
+]]></system-err>
+  </testcase>
+  <testcase name="run500CasesAllPassed" classname="com.example.Volume500AllPassedTest" time="79.71">
+    <failure message="all 500 cases should be accepted (got 403) expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: all 500 cases should be accepted (got 403) expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.example.Volume500AllPassedTest.run500CasesAllPassed(Volume500AllPassedTest.java:80)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+============================================================
+  Volume500AllPassedTest — starting simulation
+------------------------------------------------------------
+  build_id           volume-500-pass-429849ec
+  total_cases        500
+  planned passed     500
+  planned failed     0
+  planned skipped    0
+============================================================
+  [Volume500AllPassedTest] progress 100/500  passed=100  failed=0  skipped=0
+  [Volume500AllPassedTest] progress 200/500  passed=200  failed=0  skipped=0
+  [Volume500AllPassedTest] progress 300/500  passed=300  failed=0  skipped=0
+  [Volume500AllPassedTest] progress 400/500  passed=400  failed=0  skipped=0
+  [Volume500AllPassedTest] progress 500/500  passed=500  failed=0  skipped=0
+
+============================================================
+  Volume500AllPassedTest — simulation summary
+------------------------------------------------------------
+  build_id           volume-500-pass-429849ec
+  session_id         17b67479-5835-4a49-bfd9-c64eb46e6837
+  run_id             17b67479-5835-4a49-bfd9-c64eb46e6837
+------------------------------------------------------------
+  total_cases        500
+    PASSED           500
+    FAILED           0
+    SKIPPED          0
+------------------------------------------------------------
+  events_sent        403
+  events_failed      97
+  wall_clock         1m 19.682s
+============================================================
+]]></system-out>
+    <system-err><![CDATA[May 18, 2026 11:00:53 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 17b67479-5835-4a49-bfd9-c64eb46e6837 run=17b67479-5835-4a49-bfd9-c64eb46e6837
+May 18, 2026 11:01:32 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:01:32 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:01:33 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:01:35 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:01:39 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (1 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (205/200 batches in the current minute). Retry in 21s."}
+May 18, 2026 11:01:39 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:01:40 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:01:41 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:01:43 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:01:47 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (48 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (210/200 batches in the current minute). Retry in 13s."}
+May 18, 2026 11:01:47 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:01:47 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:01:49 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:01:51 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:01:55 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (48 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (215/200 batches in the current minute). Retry in 5s."}
+May 18, 2026 11:01:55 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:01:55 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:01:56 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:01:58 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:02:12 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 17b67479-5835-4a49-bfd9-c64eb46e6837
+May 18, 2026 11:02:12 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 17b67479-5835-4a49-bfd9-c64eb46e6837 sent=403 failed=97
+]]></system-err>
+  </testcase>
+  <testcase name="run1000CasesWith149FailuresAnd10Skipped" classname="com.example.Volume1000WithFailuresAndSkipsTest" time="108.465">
+    <failure message="all 1000 events should be accepted (got 697) expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: all 1000 events should be accepted (got 697) expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at com.example.Volume1000WithFailuresAndSkipsTest.run1000CasesWith149FailuresAnd10Skipped(Volume1000WithFailuresAndSkipsTest.java:147)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[
+============================================================
+  Volume1000WithFailuresAndSkipsTest — starting simulation
+------------------------------------------------------------
+  build_id           volume-1000-mixed-c132b814
+  total_cases        1000
+  planned passed     841
+  planned failed     149
+  planned skipped    10
+============================================================
+  [Volume1000WithFailuresAndSkipsTest] progress 100/1000  passed=84  failed=15  skipped=1
+  [Volume1000WithFailuresAndSkipsTest] progress 200/1000  passed=168  failed=30  skipped=2
+  [Volume1000WithFailuresAndSkipsTest] progress 300/1000  passed=252  failed=45  skipped=3
+  [Volume1000WithFailuresAndSkipsTest] progress 400/1000  passed=336  failed=60  skipped=4
+  [Volume1000WithFailuresAndSkipsTest] progress 500/1000  passed=420  failed=75  skipped=5
+  [Volume1000WithFailuresAndSkipsTest] progress 600/1000  passed=504  failed=90  skipped=6
+  [Volume1000WithFailuresAndSkipsTest] progress 700/1000  passed=588  failed=105  skipped=7
+  [Volume1000WithFailuresAndSkipsTest] progress 800/1000  passed=672  failed=120  skipped=8
+  [Volume1000WithFailuresAndSkipsTest] progress 900/1000  passed=756  failed=135  skipped=9
+  [Volume1000WithFailuresAndSkipsTest] progress 1000/1000  passed=841  failed=149  skipped=10
+
+============================================================
+  Volume1000WithFailuresAndSkipsTest — simulation summary
+------------------------------------------------------------
+  build_id           volume-1000-mixed-c132b814
+  session_id         0522109d-6d2b-4615-85cd-bc343722ca93
+  run_id             0522109d-6d2b-4615-85cd-bc343722ca93
+------------------------------------------------------------
+  total_cases        1000
+    PASSED           841
+    FAILED           149
+    SKIPPED          10
+------------------------------------------------------------
+  events_sent        697
+  events_failed      303
+  wall_clock         1m 48.450s
+============================================================
+]]></system-out>
+    <system-err><![CDATA[May 18, 2026 11:02:13 PM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 0522109d-6d2b-4615-85cd-bc343722ca93 run=0522109d-6d2b-4615-85cd-bc343722ca93
+May 18, 2026 11:02:27 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:02:28 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:02:29 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:02:31 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:02:35 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (1 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (205/200 batches in the current minute). Retry in 25s."}
+May 18, 2026 11:02:35 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:02:35 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:02:36 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:02:39 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:02:43 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (50 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (210/200 batches in the current minute). Retry in 17s."}
+May 18, 2026 11:02:43 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:02:43 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:02:44 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:02:46 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:02:50 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (50 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (215/200 batches in the current minute). Retry in 10s."}
+May 18, 2026 11:02:50 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:02:51 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:02:52 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:02:54 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:02:58 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (50 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (220/200 batches in the current minute). Retry in 2s."}
+May 18, 2026 11:02:58 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:02:58 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:02:59 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:03:23 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:03:23 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:03:24 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:03:26 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:03:30 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (2 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (205/200 batches in the current minute). Retry in 29s."}
+May 18, 2026 11:03:30 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:03:31 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:03:32 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:03:34 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:03:38 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (50 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (210/200 batches in the current minute). Retry in 22s."}
+May 18, 2026 11:03:38 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:03:39 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:03:40 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:03:42 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:03:46 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (50 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (215/200 batches in the current minute). Retry in 14s."}
+May 18, 2026 11:03:46 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:03:46 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:03:47 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:03:49 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:03:53 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+SEVERE: TestLookup: batch POST failed after 5 attempts (50 events lost): HTTP 429: {"detail":"Ingest rate limit exceeded for this project (220/200 batches in the current minute). Retry in 7s."}
+May 18, 2026 11:03:53 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 1 failed, retrying in 500ms
+May 18, 2026 11:03:54 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 2 failed, retrying in 1000ms
+May 18, 2026 11:03:55 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 3 failed, retrying in 2000ms
+May 18, 2026 11:03:57 PM io.testlookup.TestLookupReporter$LiveSession postBatch
+WARNING: TestLookup: batch attempt 4 failed, retrying in 4000ms
+May 18, 2026 11:04:01 PM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 0522109d-6d2b-4615-85cd-bc343722ca93
+May 18, 2026 11:04:01 PM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 0522109d-6d2b-4615-85cd-bc343722ca93 sent=697 failed=303
+]]></system-err>
+  </testcase>
+</testsuite>

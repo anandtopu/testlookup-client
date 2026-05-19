@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Realistic Client Examples]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="volume-replication-suites(failed)" verbose="0">
+    <classes>
+      <class name="com.example.Volume500AllPassedTest">
+        <methods>
+          <include name="run500CasesAllPassed"/>
+        </methods>
+      </class> <!-- com.example.Volume500AllPassedTest -->
+      <class name="com.example.Volume1000WithFailuresAndSkipsTest">
+        <methods>
+          <include name="run1000CasesWith149FailuresAnd10Skipped"/>
+        </methods>
+      </class> <!-- com.example.Volume1000WithFailuresAndSkipsTest -->
+    </classes>
+  </test> <!-- volume-replication-suites(failed) -->
+</suite> <!-- Failed suite [Realistic Client Examples] -->

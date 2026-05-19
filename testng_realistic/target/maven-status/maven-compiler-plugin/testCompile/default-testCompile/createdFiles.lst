@@ -1,0 +1,9 @@
+com\example\ParallelSuitesWithOneApiKeyTest.class
+com\example\SingleSuiteHundredCasesTest$CheckoutCase.class
+com\example\ParallelSuitesWithOneApiKeyTest$SimulatedCase.class
+com\example\Volume100With10FailuresTest.class
+com\example\Volume500AllPassedTest.class
+com\example\VolumeSummary.class
+com\example\Volume1000WithFailuresAndSkipsTest.class
+com\example\SingleSuiteHundredCasesTest.class
+com\example\SingleSuiteHundredCasesTest$Step.class

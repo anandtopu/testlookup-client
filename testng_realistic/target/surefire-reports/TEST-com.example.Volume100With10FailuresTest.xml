@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.Volume100With10FailuresTest" time="26.967" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\test-classes;C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\classes;C:\Users\anand\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\anand\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\anand\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\anand\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\anand\.m2\repository\io\testlookup\testlookup-reporter\1.0.0\testlookup-reporter-1.0.0.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.1\jackson-dataformat-yaml-2.17.1.jar;C:\Users\anand\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\anand\AppData\Local\Temp\surefire16992120761310595794\surefirebooter-20260516000823858_3.jar C:\Users\anand\AppData\Local\Temp\surefire16992120761310595794 2026-05-16T00-08-23_727-jvmRun1 surefire-20260516000823858_1tmp surefire_0-20260516000823858_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="Volume100With10FailuresTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\test-classes;C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic\target\classes;C:\Users\anand\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\anand\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\anand\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\anand\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\anand\.m2\repository\io\testlookup\testlookup-reporter\1.0.0\testlookup-reporter-1.0.0.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.1\jackson-dataformat-yaml-2.17.1.jar;C:\Users\anand\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\anand"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\anand\AppData\Local\Temp\surefire16992120761310595794\surefirebooter-20260516000823858_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="anand"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\anand\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\anand\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_realistic"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\anand\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\nodejs\;C:\Program Files\PowerShell\7\;C:\Program Files\Go\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.14\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Users\anand\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python312\;C:\Users\anand\.cargo\bin;C:\Users\anand\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python311\;C:\Users\anand\.local\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2025.1.1.1\bin;;C:\Users\anand\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.2.1\bin;C:\Program Files\nodejs;C:\Users\anand\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Lens\resources\cli\bin;C:\Program Files\JetBrains\PyCharm 2025.3.3\bin;C:\Users\anand\AppData\Local\Python\bin;C:\Users\anand\AppData\Local\Microsoft\WindowsApps;C:\Users\anand\AppData\Roaming\npm;C:\Users\anand\go\bin;C:\Users\anand\AppData\Roaming\Python\Python314\Scripts;C:\Program Files\JetBrains\GoLand 2026.1\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="run100CasesWith10Failures" classname="com.example.Volume100With10FailuresTest" time="26.179">
+    <system-out><![CDATA[
+============================================================
+  Volume100With10FailuresTest — starting simulation
+------------------------------------------------------------
+  build_id           volume-100-10f-37c218c3
+  total_cases        100
+  planned passed     90
+  planned failed     10
+  planned skipped    0
+============================================================
+  [Volume100With10FailuresTest] progress 25/100  passed=23  failed=2  skipped=0
+  [Volume100With10FailuresTest] progress 50/100  passed=45  failed=5  skipped=0
+  [Volume100With10FailuresTest] progress 75/100  passed=68  failed=7  skipped=0
+  [Volume100With10FailuresTest] progress 100/100  passed=90  failed=10  skipped=0
+
+============================================================
+  Volume100With10FailuresTest — simulation summary
+------------------------------------------------------------
+  build_id           volume-100-10f-37c218c3
+  session_id         7531e804-98cf-4baa-8b50-4f7629604976
+  run_id             7531e804-98cf-4baa-8b50-4f7629604976
+------------------------------------------------------------
+  total_cases        100
+    PASSED           90
+    FAILED           10
+    SKIPPED          0
+------------------------------------------------------------
+  events_sent        100
+  events_failed      0
+  wall_clock         26.163s
+============================================================
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+May 16, 2026 12:08:24 AM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 525b8584-0416-4fcf-8098-201e736569f6 run=525b8584-0416-4fcf-8098-201e736569f6
+May 16, 2026 12:08:24 AM io.testlookup.testng.TestLookupListener onStart
+INFO: TestLookupListener: session started: 525b8584-0416-4fcf-8098-201e736569f6
+May 16, 2026 12:08:24 AM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 7531e804-98cf-4baa-8b50-4f7629604976 run=7531e804-98cf-4baa-8b50-4f7629604976
+May 16, 2026 12:08:51 AM io.testlookup.TestLookupReporter closeSession
+INFO: TestLookup: session closed: 7531e804-98cf-4baa-8b50-4f7629604976
+May 16, 2026 12:08:51 AM io.testlookup.TestLookupReporter$LiveSession close
+INFO: TestLookup: session closed: 7531e804-98cf-4baa-8b50-4f7629604976 sent=100 failed=0
+]]></system-err>
+  </testcase>
+</testsuite>

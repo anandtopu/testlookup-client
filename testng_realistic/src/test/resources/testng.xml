@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Realistic Client Examples" verbose="1">
+    <test name="programmatic-client-examples">
+        <classes>
+            <class name="com.example.ParallelSuitesWithOneApiKeyTest"/>
+            <class name="com.example.SingleSuiteHundredCasesTest"/>
+        </classes>
+    </test>
+
+    <!--
+        Volume replication suites. Disabled by default — `mvn test` only runs
+        the realistic examples above. To opt in, flip enabled="true" below;
+        once enabled you can run them all or filter to one with -Dtest=...:
+
+          mvn test                                            # all three (~3.5 min wall)
+          mvn test -Dtest=Volume100With10FailuresTest         # ~20s,  100 events,  10 failed
+          mvn test -Dtest=Volume500AllPassedTest              # ~75s,  500 events,  all passed
+          mvn test -Dtest=Volume1000WithFailuresAndSkipsTest  # ~100s, 1000 events, 149 failed, 10 skipped
+
+        (-Dtest=... requires the block to be enabled — Surefire delegates
+        discovery to TestNG when <suiteXmlFiles> is set, so a class in a
+        disabled <test> is invisible to the filter.)
+    -->
+    <test name="volume-replication-suites" enabled="true">
+        <classes>
+            <class name="com.example.Volume100With10FailuresTest"/>
+            <class name="com.example.Volume500AllPassedTest"/>
+            <class name="com.example.Volume1000WithFailuresAndSkipsTest"/>
+        </classes>
+    </test>
+</suite>
