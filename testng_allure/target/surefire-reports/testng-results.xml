@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="60" passed="48" failed="4" skipped="8">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-06T02:54:13 CDT" name="API Regression 30m" finished-at="2026-06-06T02:54:53 CDT" duration-ms="39473">
+    <groups>
+    </groups>
+    <test started-at="2026-06-06T02:54:13 CDT" name="parallel-execution" finished-at="2026-06-06T02:54:35 CDT" duration-ms="21788">
+      <class name="com.example.allure.ParallelRegressionScenario">
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@22101c80, instance params:[TC00019_accounts_create_rate_limited (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00019_accounts_create_rate_limited" finished-at="2026-06-06T02:54:16 CDT" duration-ms="3378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@12477988, instance params:[TC00009_auth_create_rate_limited (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00009_auth_create_rate_limited" finished-at="2026-06-06T02:54:16 CDT" duration-ms="3372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@1d3e6d34, instance params:[TC00050_cart_create_large_payload (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00050_cart_create_large_payload" finished-at="2026-06-06T02:54:16 CDT" duration-ms="3183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@203dd56b, instance params:[TC00045_cart_create_concurrent (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00045_cart_create_concurrent" finished-at="2026-06-06T02:54:17 CDT" duration-ms="4365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@1d01dfa5, instance params:[TC00015_accounts_create_concurrent (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00015_accounts_create_concurrent" finished-at="2026-06-06T02:54:17 CDT" duration-ms="4335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@2160e52a, instance params:[TC00035_catalog_create_concurrent (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00035_catalog_create_concurrent" finished-at="2026-06-06T02:54:17 CDT" duration-ms="4355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@13e698c7, instance params:[TC00026_billing_create_idempotency (PASS)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00026_billing_create_idempotency" finished-at="2026-06-06T02:54:17 CDT" duration-ms="4105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@1f12e153, instance params:[TC00030_billing_create_large_payload (SKIP)]]" started-at="2026-06-06T02:54:13 CDT" name="execute" test-instance-name="TC00030_billing_create_large_payload" finished-at="2026-06-06T02:54:16 CDT" duration-ms="3177" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00030_billing_create_large_payload: data fixture not provisioned]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00030_billing_create_large_payload: data fixture not provisioned
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@26a94fa5, instance params:[TC00053_checkout_create_boundary (PASS)]]" started-at="2026-06-06T02:54:16 CDT" name="execute" test-instance-name="TC00053_checkout_create_boundary" finished-at="2026-06-06T02:54:21 CDT" duration-ms="4542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@267bbe1a, instance params:[TC00029_billing_create_rate_limited (FAIL)]]" started-at="2026-06-06T02:54:16 CDT" name="execute" test-instance-name="TC00029_billing_create_rate_limited" finished-at="2026-06-06T02:54:19 CDT" duration-ms="3079" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected 2xx but service returned HTTP 400 (case TC00029_billing_create_rate_limited)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 400 (case TC00029_billing_create_rate_limited)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@2873d672, instance params:[TC00056_checkout_create_idempotency (PASS)]]" started-at="2026-06-06T02:54:16 CDT" name="execute" test-instance-name="TC00056_checkout_create_idempotency" finished-at="2026-06-06T02:54:20 CDT" duration-ms="3824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@29f0802c, instance params:[TC00036_catalog_create_idempotency (PASS)]]" started-at="2026-06-06T02:54:16 CDT" name="execute" test-instance-name="TC00036_catalog_create_idempotency" finished-at="2026-06-06T02:54:20 CDT" duration-ms="3805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@2caf6912, instance params:[TC00010_auth_create_large_payload (PASS)]]" started-at="2026-06-06T02:54:17 CDT" name="execute" test-instance-name="TC00010_auth_create_large_payload" finished-at="2026-06-06T02:54:20 CDT" duration-ms="2816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@31ff1390, instance params:[TC00020_accounts_create_large_payload (PASS)]]" started-at="2026-06-06T02:54:17 CDT" name="execute" test-instance-name="TC00020_accounts_create_large_payload" finished-at="2026-06-06T02:54:20 CDT" duration-ms="2829" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@34237b90, instance params:[TC00013_accounts_create_boundary (PASS)]]" started-at="2026-06-06T02:54:17 CDT" name="execute" test-instance-name="TC00013_accounts_create_boundary" finished-at="2026-06-06T02:54:22 CDT" duration-ms="4501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@389562d6, instance params:[TC00032_catalog_create_edge_case (SKIP)]]" started-at="2026-06-06T02:54:17 CDT" name="execute" test-instance-name="TC00032_catalog_create_edge_case" finished-at="2026-06-06T02:54:22 CDT" duration-ms="4759" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00032_catalog_create_edge_case: upstream dependency unavailable in this environment]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00032_catalog_create_edge_case: upstream dependency unavailable in this environment
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@3a60c416, instance params:[TC00038_catalog_create_auth_required (PASS)]]" started-at="2026-06-06T02:54:19 CDT" name="execute" test-instance-name="TC00038_catalog_create_auth_required" finished-at="2026-06-06T02:54:23 CDT" duration-ms="3326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@3bc735b3, instance params:[TC00058_checkout_create_auth_required (PASS)]]" started-at="2026-06-06T02:54:20 CDT" name="execute" test-instance-name="TC00058_checkout_create_auth_required" finished-at="2026-06-06T02:54:23 CDT" duration-ms="3345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@3e6f3bae, instance params:[TC00008_auth_create_auth_required (PASS)]]" started-at="2026-06-06T02:54:20 CDT" name="execute" test-instance-name="TC00008_auth_create_auth_required" finished-at="2026-06-06T02:54:24 CDT" duration-ms="3299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@400d912a, instance params:[TC00003_auth_create_boundary (PASS)]]" started-at="2026-06-06T02:54:20 CDT" name="execute" test-instance-name="TC00003_auth_create_boundary" finished-at="2026-06-06T02:54:25 CDT" duration-ms="4492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@4303b7f0, instance params:[TC00060_checkout_create_large_payload (PASS)]]" started-at="2026-06-06T02:54:20 CDT" name="execute" test-instance-name="TC00060_checkout_create_large_payload" finished-at="2026-06-06T02:54:23 CDT" duration-ms="2869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@464a4442, instance params:[TC00055_checkout_create_concurrent (PASS)]]" started-at="2026-06-06T02:54:21 CDT" name="execute" test-instance-name="TC00055_checkout_create_concurrent" finished-at="2026-06-06T02:54:25 CDT" duration-ms="4062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@469d003c, instance params:[TC00040_catalog_create_large_payload (PASS)]]" started-at="2026-06-06T02:54:22 CDT" name="execute" test-instance-name="TC00040_catalog_create_large_payload" finished-at="2026-06-06T02:54:25 CDT" duration-ms="2850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@4a31c2ee, instance params:[TC00016_accounts_create_idempotency (SKIP)]]" started-at="2026-06-06T02:54:22 CDT" name="execute" test-instance-name="TC00016_accounts_create_idempotency" finished-at="2026-06-06T02:54:26 CDT" duration-ms="3783" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00016_accounts_create_idempotency: upstream dependency unavailable in this environment]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00016_accounts_create_idempotency: upstream dependency unavailable in this environment
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@53667cbe, instance params:[TC00049_cart_create_rate_limited (PASS)]]" started-at="2026-06-06T02:54:23 CDT" name="execute" test-instance-name="TC00049_cart_create_rate_limited" finished-at="2026-06-06T02:54:26 CDT" duration-ms="3094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@577f9109, instance params:[TC00059_checkout_create_rate_limited (PASS)]]" started-at="2026-06-06T02:54:23 CDT" name="execute" test-instance-name="TC00059_checkout_create_rate_limited" finished-at="2026-06-06T02:54:26 CDT" duration-ms="3106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@57bd2029, instance params:[TC00043_cart_create_boundary (PASS)]]" started-at="2026-06-06T02:54:23 CDT" name="execute" test-instance-name="TC00043_cart_create_boundary" finished-at="2026-06-06T02:54:28 CDT" duration-ms="4532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@5a101b1c, instance params:[TC00033_catalog_create_boundary (PASS)]]" started-at="2026-06-06T02:54:24 CDT" name="execute" test-instance-name="TC00033_catalog_create_boundary" finished-at="2026-06-06T02:54:28 CDT" duration-ms="4525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@5a4c638d, instance params:[TC00025_billing_create_concurrent (PASS)]]" started-at="2026-06-06T02:54:25 CDT" name="execute" test-instance-name="TC00025_billing_create_concurrent" finished-at="2026-06-06T02:54:29 CDT" duration-ms="4032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@60f2e0bd, instance params:[TC00039_catalog_create_rate_limited (PASS)]]" started-at="2026-06-06T02:54:25 CDT" name="execute" test-instance-name="TC00039_catalog_create_rate_limited" finished-at="2026-06-06T02:54:28 CDT" duration-ms="3087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@6b410923, instance params:[TC00042_cart_create_edge_case (SKIP)]]" started-at="2026-06-06T02:54:25 CDT" name="execute" test-instance-name="TC00042_cart_create_edge_case" finished-at="2026-06-06T02:54:30 CDT" duration-ms="4771" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00042_cart_create_edge_case: data fixture not provisioned]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00042_cart_create_edge_case: data fixture not provisioned
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@6d64b553, instance params:[TC00048_cart_create_auth_required (PASS)]]" started-at="2026-06-06T02:54:26 CDT" name="execute" test-instance-name="TC00048_cart_create_auth_required" finished-at="2026-06-06T02:54:29 CDT" duration-ms="3335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@6eafb10e, instance params:[TC00052_checkout_create_edge_case (FAIL)]]" started-at="2026-06-06T02:54:26 CDT" name="execute" test-instance-name="TC00052_checkout_create_edge_case" finished-at="2026-06-06T02:54:31 CDT" duration-ms="4780" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected 2xx but service returned HTTP 409 (case TC00052_checkout_create_edge_case)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 409 (case TC00052_checkout_create_edge_case)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@73d69c0f, instance params:[TC00012_accounts_create_edge_case (PASS)]]" started-at="2026-06-06T02:54:26 CDT" name="execute" test-instance-name="TC00012_accounts_create_edge_case" finished-at="2026-06-06T02:54:31 CDT" duration-ms="4739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@759d81f3, instance params:[TC00022_billing_create_edge_case (PASS)]]" started-at="2026-06-06T02:54:28 CDT" name="execute" test-instance-name="TC00022_billing_create_edge_case" finished-at="2026-06-06T02:54:33 CDT" duration-ms="4746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@781a9412, instance params:[TC00023_billing_create_boundary (SKIP)]]" started-at="2026-06-06T02:54:28 CDT" name="execute" test-instance-name="TC00023_billing_create_boundary" finished-at="2026-06-06T02:54:32 CDT" duration-ms="4509" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00023_billing_create_boundary: blocked by known defect API-1023]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00023_billing_create_boundary: blocked by known defect API-1023
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@7a94b64e, instance params:[TC00006_auth_create_idempotency (PASS)]]" started-at="2026-06-06T02:54:28 CDT" name="execute" test-instance-name="TC00006_auth_create_idempotency" finished-at="2026-06-06T02:54:32 CDT" duration-ms="3778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@7e97551f, instance params:[TC00002_auth_create_edge_case (PASS)]]" started-at="2026-06-06T02:54:29 CDT" name="execute" test-instance-name="TC00002_auth_create_edge_case" finished-at="2026-06-06T02:54:34 CDT" duration-ms="4730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@9f6e406, instance params:[TC00005_auth_create_concurrent (PASS)]]" started-at="2026-06-06T02:54:29 CDT" name="execute" test-instance-name="TC00005_auth_create_concurrent" finished-at="2026-06-06T02:54:33 CDT" duration-ms="4012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@aed0151, instance params:[TC00028_billing_create_auth_required (FAIL)]]" started-at="2026-06-06T02:54:30 CDT" name="execute" test-instance-name="TC00028_billing_create_auth_required" finished-at="2026-06-06T02:54:33 CDT" duration-ms="3318" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected 2xx but service returned HTTP 422 (case TC00028_billing_create_auth_required)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 422 (case TC00028_billing_create_auth_required)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@d400943, instance params:[TC00018_accounts_create_auth_required (PASS)]]" started-at="2026-06-06T02:54:31 CDT" name="execute" test-instance-name="TC00018_accounts_create_auth_required" finished-at="2026-06-06T02:54:34 CDT" duration-ms="3307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.ParallelRegressionScenario@e8fadb0, instance params:[TC00046_cart_create_idempotency (PASS)]]" started-at="2026-06-06T02:54:31 CDT" name="execute" test-instance-name="TC00046_cart_create_idempotency" finished-at="2026-06-06T02:54:35 CDT" duration-ms="3812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- com.example.allure.ParallelRegressionScenario -->
+    </test> <!-- parallel-execution -->
+    <test started-at="2026-06-06T02:54:35 CDT" name="sequential-execution" finished-at="2026-06-06T02:54:53 CDT" duration-ms="17631">
+      <class name="com.example.allure.SequentialRegressionScenario">
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@175acfb2, instance params:[TC00037_catalog_create_pagination (PASS)]]" started-at="2026-06-06T02:54:35 CDT" name="execute" test-instance-name="TC00037_catalog_create_pagination" finished-at="2026-06-06T02:54:36 CDT" duration-ms="866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@19593091, instance params:[TC00021_billing_create_happy_path (SKIP)]]" started-at="2026-06-06T02:54:36 CDT" name="execute" test-instance-name="TC00021_billing_create_happy_path" finished-at="2026-06-06T02:54:37 CDT" duration-ms="1089" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00021_billing_create_happy_path: feature flag disabled for this release]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00021_billing_create_happy_path: feature flag disabled for this release
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@1dab9dd6, instance params:[TC00057_checkout_create_pagination (PASS)]]" started-at="2026-06-06T02:54:37 CDT" name="execute" test-instance-name="TC00057_checkout_create_pagination" finished-at="2026-06-06T02:54:38 CDT" duration-ms="885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@264c5d07, instance params:[TC00011_accounts_create_happy_path (PASS)]]" started-at="2026-06-06T02:54:38 CDT" name="execute" test-instance-name="TC00011_accounts_create_happy_path" finished-at="2026-06-06T02:54:39 CDT" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@2b9b7f1f, instance params:[TC00007_auth_create_pagination (SKIP)]]" started-at="2026-06-06T02:54:39 CDT" name="execute" test-instance-name="TC00007_auth_create_pagination" finished-at="2026-06-06T02:54:40 CDT" duration-ms="833" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00007_auth_create_pagination: blocked by known defect API-1007]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00007_auth_create_pagination: blocked by known defect API-1007
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@30af7377, instance params:[TC00051_checkout_create_happy_path (PASS)]]" started-at="2026-06-06T02:54:40 CDT" name="execute" test-instance-name="TC00051_checkout_create_happy_path" finished-at="2026-06-06T02:54:41 CDT" duration-ms="1118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@4a03bb68, instance params:[TC00041_cart_create_happy_path (FAIL)]]" started-at="2026-06-06T02:54:41 CDT" name="execute" test-instance-name="TC00041_cart_create_happy_path" finished-at="2026-06-06T02:54:42 CDT" duration-ms="1108" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected 2xx but service returned HTTP 502 (case TC00041_cart_create_happy_path)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 502 (case TC00041_cart_create_happy_path)
+at org.testng.Assert.fail(Assert.java:111)
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@4bdcaf36, instance params:[TC00001_auth_create_happy_path (PASS)]]" started-at="2026-06-06T02:54:42 CDT" name="execute" test-instance-name="TC00001_auth_create_happy_path" finished-at="2026-06-06T02:54:43 CDT" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@4e868ef5, instance params:[TC00044_cart_create_negative (SKIP)]]" started-at="2026-06-06T02:54:43 CDT" name="execute" test-instance-name="TC00044_cart_create_negative" finished-at="2026-06-06T02:54:44 CDT" duration-ms="992" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipped TC00044_cart_create_negative: upstream dependency unavailable in this environment]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipped TC00044_cart_create_negative: upstream dependency unavailable in this environment
+at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@55ea2d70, instance params:[TC00031_catalog_create_happy_path (PASS)]]" started-at="2026-06-06T02:54:44 CDT" name="execute" test-instance-name="TC00031_catalog_create_happy_path" finished-at="2026-06-06T02:54:45 CDT" duration-ms="1096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@5d39f2d8, instance params:[TC00024_billing_create_negative (PASS)]]" started-at="2026-06-06T02:54:45 CDT" name="execute" test-instance-name="TC00024_billing_create_negative" finished-at="2026-06-06T02:54:46 CDT" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@5e742e4, instance params:[TC00034_catalog_create_negative (PASS)]]" started-at="2026-06-06T02:54:46 CDT" name="execute" test-instance-name="TC00034_catalog_create_negative" finished-at="2026-06-06T02:54:47 CDT" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@61d01788, instance params:[TC00004_auth_create_negative (PASS)]]" started-at="2026-06-06T02:54:47 CDT" name="execute" test-instance-name="TC00004_auth_create_negative" finished-at="2026-06-06T02:54:48 CDT" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@67a056f1, instance params:[TC00054_checkout_create_negative (PASS)]]" started-at="2026-06-06T02:54:48 CDT" name="execute" test-instance-name="TC00054_checkout_create_negative" finished-at="2026-06-06T02:54:49 CDT" duration-ms="1001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@69cac930, instance params:[TC00017_accounts_create_pagination (PASS)]]" started-at="2026-06-06T02:54:49 CDT" name="execute" test-instance-name="TC00017_accounts_create_pagination" finished-at="2026-06-06T02:54:50 CDT" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@6ad6fa53, instance params:[TC00027_billing_create_pagination (PASS)]]" started-at="2026-06-06T02:54:50 CDT" name="execute" test-instance-name="TC00027_billing_create_pagination" finished-at="2026-06-06T02:54:51 CDT" duration-ms="857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@71c905a3, instance params:[TC00047_cart_create_pagination (PASS)]]" started-at="2026-06-06T02:54:51 CDT" name="execute" test-instance-name="TC00047_cart_create_pagination" finished-at="2026-06-06T02:54:52 CDT" duration-ms="872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+        <test-method signature="execute()[pri:0, instance:com.example.allure.SequentialRegressionScenario@847f3e7, instance params:[TC00014_accounts_create_negative (PASS)]]" started-at="2026-06-06T02:54:52 CDT" name="execute" test-instance-name="TC00014_accounts_create_negative" finished-at="2026-06-06T02:54:53 CDT" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- com.example.allure.SequentialRegressionScenario -->
+    </test> <!-- sequential-execution -->
+  </suite> <!-- API Regression 30m -->
+</testng-results>

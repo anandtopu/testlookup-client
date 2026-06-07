@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="41.282" tests="60" errors="0" skipped="8" failures="4">
+  <properties>
+    <property name="regression.totalCases" value="60"/>
+    <property name="java.specification.version" value="24"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_allure\target\test-classes;C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_allure\target\classes;C:\Users\anand\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\anand\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\anand\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\anand\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\anand\.m2\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Users\anand\.m2\repository\io\testlookup\testlookup-reporter\1.0.0\testlookup-reporter-1.0.0.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.1\jackson-dataformat-yaml-2.17.1.jar;C:\Users\anand\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;"/>
+    <property name="regression.skipCount" value="8"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="24"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
+    <property name="sun.java.command" value="C:\Users\anand\AppData\Local\Temp\surefire13247931455565355406\surefirebooter-20260606025411241_3.jar C:\Users\anand\AppData\Local\Temp\surefire13247931455565355406 2026-06-06T02-54-11_105-jvmRun1 surefire-20260606025411241_1tmp surefire_0-20260606025411241_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_allure\target\test-classes;C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_allure\target\classes;C:\Users\anand\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\anand\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\anand\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\anand\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-testng\2.27.0\allure-testng-2.27.0.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-java-commons\2.27.0\allure-java-commons-2.27.0.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-model\2.27.0\allure-model-2.27.0.jar;C:\Users\anand\.m2\repository\io\qameta\allure\allure-test-filter\2.27.0\allure-test-filter-2.27.0.jar;C:\Users\anand\.m2\repository\org\aspectj\aspectjweaver\1.9.24\aspectjweaver-1.9.24.jar;C:\Users\anand\.m2\repository\io\testlookup\testlookup-reporter\1.0.0\testlookup-reporter-1.0.0.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\anand\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.1\jackson-dataformat-yaml-2.17.1.jar;C:\Users\anand\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\anand"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-24"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_allure"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="regression.threads" value="4"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\anand\AppData\Local\Temp\surefire13247931455565355406\surefirebooter-20260606025411241_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="24.0.1+9-30"/>
+    <property name="user.name" value="anand"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="regression.targetMinutes" value="1"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\anand\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\anand\AppData\Local\Temp\"/>
+    <property name="java.version" value="24.0.1"/>
+    <property name="user.dir" value="C:\Users\anand\Downloads\Projects\java\product_testing\testlookup-client\testng_allure"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="regression.failCount" value="4"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-24\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\PowerShell\7;C:\Users\anand\Downloads\Projects\testlookup_new\.venv/Scripts;C:\Users\anand\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python313\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Rancher Desktop\resources\resources\win32\bin\;C:\Program Files\Rancher Desktop\resources\resources\win32\docker-cli-plugins\;C:\Program Files\Rancher Desktop\resources\resources\linux\bin\;C:\Program Files\Rancher Desktop\resources\resources\linux\docker-cli-plugins\;C:\Program Files\nodejs\;C:\Program Files\PowerShell\7\;C:\Program Files\Go\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.14\bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\PuTTY\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\anand\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python312\;C:\Users\anand\.cargo\bin;C:\Users\anand\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\anand\AppData\Local\Programs\Python\Python311\;C:\Users\anand\.local\bin;C:\WINDOWS\system32\config\systemprofile\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2025.1.1.1\bin;;C:\Users\anand\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2025.2.1\bin;C:\Program Files\nodejs;C:\Users\anand\AppData\Local\Programs\Antigravity\bin;C:\Program Files\Lens\resources\cli\bin;C:\Program Files\JetBrains\PyCharm 2025.3.3\bin;C:\Users\anand\AppData\Local\Python\bin;C:\Users\anand\AppData\Local\Microsoft\WindowsApps;C:\Users\anand\AppData\Roaming\npm;C:\Users\anand\go\bin;C:\Users\anand\AppData\Roaming\Python\Python314\Scripts;C:\Program Files\JetBrains\GoLand 2026.1\bin;C:\Users\anand\AppData\Local\Programs\Ollama;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="24.0.1+9-30"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="68.0"/>
+  </properties>
+  <testcase name="TC00030_billing_create_large_payload" classname="com.example.allure.ParallelRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00030_billing_create_large_payload: data fixture not provisioned"/>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jun 06, 2026 2:54:13 AM io.testlookup.TestLookupReporter$LiveSession <init>
+INFO: TestLookup: session started: 5d0c555f-a31a-4e15-877f-3985cfa0e74d run=5d0c555f-a31a-4e15-877f-3985cfa0e74d
+Jun 06, 2026 2:54:13 AM io.testlookup.testng.TestLookupListener onStart
+INFO: TestLookupListener: session started: 5d0c555f-a31a-4e15-877f-3985cfa0e74d
+]]></system-err>
+  </testcase>
+  <testcase name="TC00050_cart_create_large_payload" classname="com.example.allure.ParallelRegressionScenario" time="3.325"/>
+  <testcase name="TC00009_auth_create_rate_limited" classname="com.example.allure.ParallelRegressionScenario" time="0.047"/>
+  <testcase name="TC00019_accounts_create_rate_limited" classname="com.example.allure.ParallelRegressionScenario" time="0.003"/>
+  <testcase name="TC00026_billing_create_idempotency" classname="com.example.allure.ParallelRegressionScenario" time="0.727"/>
+  <testcase name="TC00015_accounts_create_concurrent" classname="com.example.allure.ParallelRegressionScenario" time="0.23"/>
+  <testcase name="TC00035_catalog_create_concurrent" classname="com.example.allure.ParallelRegressionScenario" time="0.019"/>
+  <testcase name="TC00045_cart_create_concurrent" classname="com.example.allure.ParallelRegressionScenario" time="0.009"/>
+  <testcase name="TC00029_billing_create_rate_limited" classname="com.example.allure.ParallelRegressionScenario" time="2.046">
+    <failure message="expected 2xx but service returned HTTP 400 (case TC00029_billing_create_rate_limited)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 400 (case TC00029_billing_create_rate_limited)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+]]></failure>
+  </testcase>
+  <testcase name="TC00010_auth_create_large_payload" classname="com.example.allure.ParallelRegressionScenario" time="0.513"/>
+  <testcase name="TC00020_accounts_create_large_payload" classname="com.example.allure.ParallelRegressionScenario" time="0.244"/>
+  <testcase name="TC00036_catalog_create_idempotency" classname="com.example.allure.ParallelRegressionScenario" time="0.017"/>
+  <testcase name="TC00056_checkout_create_idempotency" classname="com.example.allure.ParallelRegressionScenario" time="0.015"/>
+  <testcase name="TC00053_checkout_create_boundary" classname="com.example.allure.ParallelRegressionScenario" time="0.665"/>
+  <testcase name="TC00013_accounts_create_boundary" classname="com.example.allure.ParallelRegressionScenario" time="0.992"/>
+  <testcase name="TC00032_catalog_create_edge_case" classname="com.example.allure.ParallelRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00032_catalog_create_edge_case: upstream dependency unavailable in this environment"/>
+  </testcase>
+  <testcase name="TC00038_catalog_create_auth_required" classname="com.example.allure.ParallelRegressionScenario" time="0.612"/>
+  <testcase name="TC00060_checkout_create_large_payload" classname="com.example.allure.ParallelRegressionScenario" time="0.333"/>
+  <testcase name="TC00058_checkout_create_auth_required" classname="com.example.allure.ParallelRegressionScenario" time="0.198"/>
+  <testcase name="TC00008_auth_create_auth_required" classname="com.example.allure.ParallelRegressionScenario" time="0.198"/>
+  <testcase name="TC00003_auth_create_boundary" classname="com.example.allure.ParallelRegressionScenario" time="1.209"/>
+  <testcase name="TC00040_catalog_create_large_payload" classname="com.example.allure.ParallelRegressionScenario" time="0.031"/>
+  <testcase name="TC00055_checkout_create_concurrent" classname="com.example.allure.ParallelRegressionScenario" time="0.22"/>
+  <testcase name="TC00049_cart_create_rate_limited" classname="com.example.allure.ParallelRegressionScenario" time="0.903"/>
+  <testcase name="TC00016_accounts_create_idempotency" classname="com.example.allure.ParallelRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00016_accounts_create_idempotency: upstream dependency unavailable in this environment"/>
+  </testcase>
+  <testcase name="TC00059_checkout_create_rate_limited" classname="com.example.allure.ParallelRegressionScenario" time="0.268"/>
+  <testcase name="TC00039_catalog_create_rate_limited" classname="com.example.allure.ParallelRegressionScenario" time="1.623"/>
+  <testcase name="TC00043_cart_create_boundary" classname="com.example.allure.ParallelRegressionScenario" time="0.001"/>
+  <testcase name="TC00033_catalog_create_boundary" classname="com.example.allure.ParallelRegressionScenario" time="0.193"/>
+  <testcase name="TC00025_billing_create_concurrent" classname="com.example.allure.ParallelRegressionScenario" time="0.716"/>
+  <testcase name="TC00048_cart_create_auth_required" classname="com.example.allure.ParallelRegressionScenario" time="0.457"/>
+  <testcase name="TC00042_cart_create_edge_case" classname="com.example.allure.ParallelRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00042_cart_create_edge_case: data fixture not provisioned"/>
+  </testcase>
+  <testcase name="TC00052_checkout_create_edge_case" classname="com.example.allure.ParallelRegressionScenario" time="0.989">
+    <failure message="expected 2xx but service returned HTTP 409 (case TC00052_checkout_create_edge_case)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 409 (case TC00052_checkout_create_edge_case)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+]]></failure>
+  </testcase>
+  <testcase name="TC00012_accounts_create_edge_case" classname="com.example.allure.ParallelRegressionScenario" time="0.226"/>
+  <testcase name="TC00006_auth_create_idempotency" classname="com.example.allure.ParallelRegressionScenario" time="0.856"/>
+  <testcase name="TC00023_billing_create_boundary" classname="com.example.allure.ParallelRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00023_billing_create_boundary: blocked by known defect API-1023"/>
+  </testcase>
+  <testcase name="TC00022_billing_create_edge_case" classname="com.example.allure.ParallelRegressionScenario" time="1.63"/>
+  <testcase name="TC00028_billing_create_auth_required" classname="com.example.allure.ParallelRegressionScenario" time="2.107">
+    <failure message="expected 2xx but service returned HTTP 422 (case TC00028_billing_create_auth_required)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 422 (case TC00028_billing_create_auth_required)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+]]></failure>
+  </testcase>
+  <testcase name="TC00005_auth_create_concurrent" classname="com.example.allure.ParallelRegressionScenario" time="2.267"/>
+  <testcase name="TC00002_auth_create_edge_case" classname="com.example.allure.ParallelRegressionScenario" time="2.526"/>
+  <testcase name="TC00018_accounts_create_auth_required" classname="com.example.allure.ParallelRegressionScenario" time="3.084"/>
+  <testcase name="TC00046_cart_create_idempotency" classname="com.example.allure.ParallelRegressionScenario" time="3.814"/>
+  <testcase name="TC00037_catalog_create_pagination" classname="com.example.allure.SequentialRegressionScenario" time="0.867"/>
+  <testcase name="TC00021_billing_create_happy_path" classname="com.example.allure.SequentialRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00021_billing_create_happy_path: feature flag disabled for this release"/>
+  </testcase>
+  <testcase name="TC00057_checkout_create_pagination" classname="com.example.allure.SequentialRegressionScenario" time="0.886"/>
+  <testcase name="TC00011_accounts_create_happy_path" classname="com.example.allure.SequentialRegressionScenario" time="1.082"/>
+  <testcase name="TC00007_auth_create_pagination" classname="com.example.allure.SequentialRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00007_auth_create_pagination: blocked by known defect API-1007"/>
+  </testcase>
+  <testcase name="TC00051_checkout_create_happy_path" classname="com.example.allure.SequentialRegressionScenario" time="1.119"/>
+  <testcase name="TC00041_cart_create_happy_path" classname="com.example.allure.SequentialRegressionScenario" time="1.111">
+    <failure message="expected 2xx but service returned HTTP 502 (case TC00041_cart_create_happy_path)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected 2xx but service returned HTTP 502 (case TC00041_cart_create_happy_path)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="TC00001_auth_create_happy_path" classname="com.example.allure.SequentialRegressionScenario" time="1.072"/>
+  <testcase name="TC00044_cart_create_negative" classname="com.example.allure.SequentialRegressionScenario" time="0.0">
+    <skipped message="Skipped TC00044_cart_create_negative: upstream dependency unavailable in this environment"/>
+  </testcase>
+  <testcase name="TC00031_catalog_create_happy_path" classname="com.example.allure.SequentialRegressionScenario" time="1.098"/>
+  <testcase name="TC00024_billing_create_negative" classname="com.example.allure.SequentialRegressionScenario" time="0.973"/>
+  <testcase name="TC00034_catalog_create_negative" classname="com.example.allure.SequentialRegressionScenario" time="0.983"/>
+  <testcase name="TC00004_auth_create_negative" classname="com.example.allure.SequentialRegressionScenario" time="0.955"/>
+  <testcase name="TC00054_checkout_create_negative" classname="com.example.allure.SequentialRegressionScenario" time="1.002"/>
+  <testcase name="TC00017_accounts_create_pagination" classname="com.example.allure.SequentialRegressionScenario" time="0.848"/>
+  <testcase name="TC00027_billing_create_pagination" classname="com.example.allure.SequentialRegressionScenario" time="0.858"/>
+  <testcase name="TC00047_cart_create_pagination" classname="com.example.allure.SequentialRegressionScenario" time="0.874"/>
+  <testcase name="TC00014_accounts_create_negative" classname="com.example.allure.SequentialRegressionScenario" time="0.963"/>
+</testsuite>

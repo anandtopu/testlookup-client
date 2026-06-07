@@ -1,0 +1,9 @@
+com\example\allure\RegressionCase$Outcome.class
+com\example\allure\RegressionCase.class
+com\example\allure\CasePlan.class
+com\example\allure\AllureSteps$1.class
+com\example\allure\AbstractRegressionScenario.class
+com\example\allure\SequentialRegressionScenario.class
+com\example\allure\AllureSteps.class
+com\example\allure\CasePlan$1.class
+com\example\allure\ParallelRegressionScenario.class

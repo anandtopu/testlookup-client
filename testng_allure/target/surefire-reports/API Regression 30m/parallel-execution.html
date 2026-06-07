@@ -1,0 +1,535 @@
+<html>
+<head>
+<title>TestNG:  parallel-execution</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>parallel-execution</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/3/5</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 06 02:54:13 CDT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>21 seconds (21788 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00052_checkout_create_edge_case)</td>
+<td><div><pre>java.lang.AssertionError: expected 2xx but service returned HTTP 409 (case TC00052_checkout_create_edge_case)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1759968020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1759968020'><pre>java.lang.AssertionError: expected 2xx but service returned HTTP 409 (case TC00052_checkout_create_edge_case)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@6eafb10e</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00029_billing_create_rate_limited)</td>
+<td><div><pre>java.lang.AssertionError: expected 2xx but service returned HTTP 400 (case TC00029_billing_create_rate_limited)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1605065564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1605065564'><pre>java.lang.AssertionError: expected 2xx but service returned HTTP 400 (case TC00029_billing_create_rate_limited)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@267bbe1a</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00028_billing_create_auth_required)</td>
+<td><div><pre>java.lang.AssertionError: expected 2xx but service returned HTTP 422 (case TC00028_billing_create_auth_required)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace287957041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace287957041'><pre>java.lang.AssertionError: expected 2xx but service returned HTTP 422 (case TC00028_billing_create_auth_required)
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:38)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@aed0151</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00025_billing_create_concurrent)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@5a4c638d</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00002_auth_create_edge_case)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@7e97551f</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00019_accounts_create_rate_limited)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@22101c80</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00009_auth_create_rate_limited)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@12477988</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00043_cart_create_boundary)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@57bd2029</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00033_catalog_create_boundary)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@5a101b1c</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00046_cart_create_idempotency)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@e8fadb0</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00056_checkout_create_idempotency)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@2873d672</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00050_cart_create_large_payload)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@1d3e6d34</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00020_accounts_create_large_payload)</td>
+<td></td>
+<td>2</td>
+<td>com.example.allure.ParallelRegressionScenario@31ff1390</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00058_checkout_create_auth_required)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@3bc735b3</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00013_accounts_create_boundary)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@34237b90</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00010_auth_create_large_payload)</td>
+<td></td>
+<td>2</td>
+<td>com.example.allure.ParallelRegressionScenario@2caf6912</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00008_auth_create_auth_required)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@3e6f3bae</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00022_billing_create_edge_case)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@759d81f3</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00045_cart_create_concurrent)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@203dd56b</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00015_accounts_create_concurrent)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@1d01dfa5</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00036_catalog_create_idempotency)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@29f0802c</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00006_auth_create_idempotency)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@7a94b64e</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00040_catalog_create_large_payload)</td>
+<td></td>
+<td>2</td>
+<td>com.example.allure.ParallelRegressionScenario@469d003c</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00003_auth_create_boundary)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@400d912a</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00038_catalog_create_auth_required)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@3a60c416</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00035_catalog_create_concurrent)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@2160e52a</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00055_checkout_create_concurrent)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@464a4442</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00053_checkout_create_boundary)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@26a94fa5</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00049_cart_create_rate_limited)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@53667cbe</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00012_accounts_create_edge_case)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@73d69c0f</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00005_auth_create_concurrent)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@9f6e406</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00039_catalog_create_rate_limited)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@60f2e0bd</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00018_accounts_create_auth_required)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@d400943</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00026_billing_create_idempotency)</td>
+<td></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@13e698c7</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00060_checkout_create_large_payload)</td>
+<td></td>
+<td>2</td>
+<td>com.example.allure.ParallelRegressionScenario@4303b7f0</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00048_cart_create_auth_required)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@6d64b553</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00059_checkout_create_rate_limited)</td>
+<td></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@577f9109</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00023_billing_create_boundary)</td>
+<td><div><pre>org.testng.SkipException: Skipped TC00023_billing_create_boundary: blocked by known defect API-1023
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2077834026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2077834026'><pre>org.testng.SkipException: Skipped TC00023_billing_create_boundary: blocked by known defect API-1023
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@781a9412</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00016_accounts_create_idempotency)</td>
+<td><div><pre>org.testng.SkipException: Skipped TC00016_accounts_create_idempotency: upstream dependency unavailable in this environment
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace827638544", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace827638544'><pre>org.testng.SkipException: Skipped TC00016_accounts_create_idempotency: upstream dependency unavailable in this environment
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@4a31c2ee</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00042_cart_create_edge_case)</td>
+<td><div><pre>org.testng.SkipException: Skipped TC00042_cart_create_edge_case: data fixture not provisioned
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace274615096", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace274615096'><pre>org.testng.SkipException: Skipped TC00042_cart_create_edge_case: data fixture not provisioned
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@6b410923</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00030_billing_create_large_payload)</td>
+<td><div><pre>org.testng.SkipException: Skipped TC00030_billing_create_large_payload: data fixture not provisioned
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295246116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295246116'><pre>org.testng.SkipException: Skipped TC00030_billing_create_large_payload: data fixture not provisioned
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>3</td>
+<td>com.example.allure.ParallelRegressionScenario@1f12e153</td></tr>
+<tr>
+<td title='com.example.allure.ParallelRegressionScenario.execute()'><b>execute</b><br>Test class: com.example.allure.ParallelRegressionScenario (TC00032_catalog_create_edge_case)</td>
+<td><div><pre>org.testng.SkipException: Skipped TC00032_catalog_create_edge_case: upstream dependency unavailable in this environment
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1007216738", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1007216738'><pre>org.testng.SkipException: Skipped TC00032_catalog_create_edge_case: upstream dependency unavailable in this environment
+	at com.example.allure.AllureSteps.verifyResponse(AllureSteps.java:41)
+	at com.example.allure.AbstractRegressionScenario.execute(AbstractRegressionScenario.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+</pre></div></td>
+<td>4</td>
+<td>com.example.allure.ParallelRegressionScenario@389562d6</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  API Regression 30m — large simulated regression suite.
+
+  1500 unique cases (1200 pass / 100 fail / 200 skipped), split across two
+  execution blocks so the run exercises BOTH parallel and sequential paths:
+
+    * parallel-execution   — runs factory instances concurrently
+                             (parallel="instances", thread-count below).
+    * sequential-execution — runs its instances one at a time.
+
+  The case generator (CasePlan) sizes per-case sleeps so the whole run lands
+  near ~30 minutes wall-clock at the defaults. Tune without editing code via
+  system properties, e.g. a 1-minute smoke run:
+
+      mvn -f testng_allure/pom.xml test `
+          "-Dregression.totalCases=60" "-Dregression.failCount=4" `
+          "-Dregression.skipCount=8"   "-Dregression.targetMinutes=1" `
+          "-Dregression.threads=4"
+
+  IMPORTANT: keep thread-count below in sync with -Dregression.threads so the
+  sleep budget matches the actual concurrency.
+
+  Two listeners run together: AllureTestNg builds target/allure-results, and the
+  TestLookup listener streams the same run (silently no-ops without config).
+-->
+<suite name="API Regression 30m" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="io.testlookup.testng.TestLookupListener"/>
+    </listeners>
+
+    <test name="parallel-execution" parallel="instances" thread-count="8">
+        <classes>
+            <class name="com.example.allure.ParallelRegressionScenario"/>
+        </classes>
+    </test>
+
+    <test name="sequential-execution">
+        <classes>
+            <class name="com.example.allure.SequentialRegressionScenario"/>
+        </classes>
+    </test>
+</suite>
