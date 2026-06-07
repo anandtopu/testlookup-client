@@ -31,3 +31,14 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Python testbed ###
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest_tmp/
+allure-results/
+pytest_*/allure-results/
+pytest_*/.pytest_tmp/
+testlookup-python-sdk/*.egg-info/
