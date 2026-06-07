@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testlookup-reporter"
+version = "1.0.0"
+description = "TestLookup Reporter — Python client SDK (vendored testbed copy)"
+requires-python = ">=3.9"
+dependencies = [
+    "httpx>=0.24",
+]
+
+# pyyaml is only needed when config comes from testlookup.yaml (the .properties
+# path needs nothing extra). allure-pytest / pytest-xdist are pulled in by the
+# example projects that use them, not by the core SDK.
+[project.optional-dependencies]
+yaml = ["pyyaml>=6"]
+
+# This single module IS the SDK. It lives at the package root (py-modules) so
+# `import testlookup_reporter` resolves after `pip install -e .`.
+[tool.setuptools]
+py-modules = ["testlookup_reporter"]
+
+# The zero-code path. Registering the module as a pytest11 plugin makes pytest
+# auto-load testlookup_reporter's pytest_addoption/pytest_configure hooks on
+# every run — the Python analogue of the TestNG <listener> line in testng.xml.
+# Projects that stream programmatically (realistic, allure) disable it per-run
+# with `-p no:testlookup`.
+[project.entry-points.pytest11]
+testlookup = "testlookup_reporter"
